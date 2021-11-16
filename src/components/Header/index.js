@@ -18,14 +18,6 @@ const Header = () => {
         <Link to="/">
           <LogoImg src={RMDBLogo} alt="rmdb-logo" />
         </Link>
-        {user ? (
-          <span className="loggedin">Loggen in as: {user.username}</span>
-        ) : (
-          <Link to="/login">
-            <span className="login">Log in</span>
-          </Link>
-        )}
-
         <TMDBLogoImg src={TMDBLogo} alt="tmdb-logo" />
       </Content>
     </Wrapper>
